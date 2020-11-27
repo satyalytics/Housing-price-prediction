@@ -1,5 +1,4 @@
 # California Housing Price Prediction
-Predicting Airbnb prices for visitors
 
 ## Directory Structure
 
