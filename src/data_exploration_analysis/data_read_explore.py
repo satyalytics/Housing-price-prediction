@@ -24,7 +24,7 @@ def read_data(file, sep=None, na_values=None):
             df = pd.read_csv(file, sep=sep, na_values=na_values)
         if ext in xcel:
             df = pd.read_excel(file)
-    except OSError as e:
+    except OSError:
         print("File not found")
         
     return df
@@ -71,3 +71,14 @@ def modify_df(df, dtypes, remark=None):
     meta_df['changed_dtypes'] = df.dtypes
     
     return df, meta_df
+
+
+def type_of_data(df, type_dict):
+    """
+        Expect the user should detect the data types like nominal, ordinal for categorical data and num
+        for numeric data
+    """
+    meta_df = meta_data(df)
+    type_ = pd.Series(type_dict)
+    meta_df['cat_df'] = type_
+    return meta_df
