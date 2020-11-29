@@ -73,12 +73,12 @@ def modify_df(df, dtypes, remark=None):
     return df, meta_df
 
 
-# def type_of_data(df, type_dict):
-#     """
-#         Expect the user should detect the data types like nominal, ordinal for categorical data and num
-#         for numeric data
-#     """
-#     meta_df = meta_data(df)
-#     type_ = pd.Series(type_dict)
-#     meta_df['cat_df'] = type_
-#     return meta_df
+def type_of_data(df, type_dict):
+    """
+        Expect the user should detect the data types like nominal, ordinal for categorical data and num
+        for numeric data
+    """
+    meta_df = meta_data(df)
+    type_ = pd.Series(type_dict)
+    meta_df['cat_df'] = type_
+    return meta_df
