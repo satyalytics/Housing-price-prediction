@@ -82,3 +82,8 @@ def type_of_data(df, type_dict):
     type_ = pd.Series(type_dict)
     meta_df['cat_df'] = type_
     return meta_df
+
+def detect_outlier(df):
+    """
+    """
+    pass
