@@ -47,5 +47,4 @@ def set_constraints(df, set_dict):
         returns:
             df: The dataframe with modification
     """
-    for i in df:
-        
+    pass
