@@ -71,4 +71,8 @@ def set_constraints(df, set_dict):
             df: The dataframe with modification
     """
     
-    pass
+    for i in df:
+        if df[i].dtype == 'o':
+            df.loc[~df[i].isin(set_dict[i]), i] = np
+    return df
+
