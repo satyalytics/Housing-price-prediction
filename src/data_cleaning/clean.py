@@ -6,12 +6,35 @@ import pandas as pd
 """
 
 def get_range(df):
-    pass
+    """
+    Calculate the range of numerical values
+    
+    Args:
+        df: A data frame
+    Returns:
+        range_df: A dataframe containing ranges
+    """
+    range_dict = {}
+    for i in df:
+        if df[i].dtype == 'int':
+            range_dict[i] = {'min' : df[i].min(), 'max' : df[i].max()}
+    return pd.DataFrame(range_dict)
 
 
 def get_set(df):
-    pass
-
+    """
+    Return a set of unique values present categorical columns
+    
+    Args: 
+        df: A dataframe
+    Returns:
+        set_df: Set of categorical values
+    """
+    set_dict = {}
+    for i in df:
+        if df[i].dtype == 'o':
+            set_dict[i] = df[i].unique().tolist()
+    return pd.DataFrame(set_dict)
 
 def range_constraints(df, range_dict, except_dict):
     """
@@ -47,4 +70,5 @@ def set_constraints(df, set_dict):
         returns:
             df: The dataframe with modification
     """
+    
     pass
