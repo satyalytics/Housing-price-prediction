@@ -20,5 +20,5 @@ def binarize(df, cols=None, col_dict=None):
     for i in df:
         if df[i].dtype == 'int':
             mod_col = str(i)+"_bin"
-            df[mod_col] = pd.cut(df[i])
+            df[mod_col] = pd.cut(df[i], bins=bins)
     return df
