@@ -73,6 +73,6 @@ def set_constraints(df, set_dict):
     
     for i in df:
         if df[i].dtype == 'o':
-            df.loc[~df[i].isin(set_dict[i]), i] = np
+            df.loc[~df[i].isin(set_dict[i]), i] = np.nan
     return df
 
