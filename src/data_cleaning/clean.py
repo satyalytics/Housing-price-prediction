@@ -36,7 +36,7 @@ def get_set(df):
             set_dict[i] = df[i].unique().tolist()
     return pd.DataFrame(set_dict)
 
-def range_constraints(df, range_dict, except_dict):
+def range_constraints(df, range_dict, except_dict=None):
     """
         Numerical values should be checked with invalid values and range constraints. The bad values will be
         set as null values.
