@@ -1,4 +1,4 @@
-Unnamed: 0,nullity,pct_null,dtype,columns,expect_datatype,related_to,relationship_strength
+col_name,nullity,pct_null,dtype,columns,expect_datatype,related_to,relationship_strength
 Id,0,0.0,int64,Id,non,none,none
 MSSubClass,0,0.0,int64,MSSubClass,int,house,strong
 MSZoning,0,0.0,object,MSZoning,nom,location,medium
@@ -31,10 +31,10 @@ ExterCond,0,0.0,object,ExterCond,ord,house,medium
 Foundation,0,0.0,object,Foundation,nom,house,medium
 BsmtQual,37,2.5342465753424657,object,BsmtQual,ord,house,strong
 BsmtCond,37,2.5342465753424657,object,BsmtCond,ord,house,strong
-BsmtExposure,38,2.6027397260273974,object,BsmtExposure,ord,house,weak
+BsmtExposure,38,2.602739726027397,object,BsmtExposure,ord,house,weak
 BsmtFinType1,37,2.5342465753424657,object,BsmtFinType1,ord,house,strong
 BsmtFinSF1,0,0.0,int64,BsmtFinSF1,int,house,strong
-BsmtFinType2,38,2.6027397260273974,object,BsmtFinType2,int,house,strong
+BsmtFinType2,38,2.602739726027397,object,BsmtFinType2,int,house,strong
 BsmtFinSF2,0,0.0,int64,BsmtFinSF2,int,house,strong
 BsmtUnfSF,0,0.0,int64,BsmtUnfSF,int,house,strong
 TotalBsmtSF,0,0.0,int64,TotalBsmtSF,int,house,strong
@@ -72,7 +72,7 @@ EnclosedPorch,0,0.0,int64,EnclosedPorch,int,house,medium
 ScreenPorch,0,0.0,int64,ScreenPorch,int,house,medium
 PoolArea,0,0.0,int64,PoolArea,int,house,medium
 PoolQC,1453,99.52054794520548,object,PoolQC,ord,peripheral,weak
-Fence,1179,80.75342465753425,object,Fence,ord,house,weak
+Fence,1179,80.75342465753424,object,Fence,ord,house,weak
 MiscFeature,1406,96.3013698630137,object,MiscFeature,nom,house,medium
 MiscVal,0,0.0,int64,MiscVal,int,house,strong
 MoSold,0,0.0,int64,MoSold,tem,house,medium
